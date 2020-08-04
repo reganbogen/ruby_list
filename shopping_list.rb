@@ -5,3 +5,11 @@ def create_list
   hash = { "name" => name, "items" => Array.new}
   return hash
 end
+
+def add_list_item
+  print "What is the item called? "
+  item_name = gets.chomp
+  
+  hash = {"name"=> name}
+  return hash
+end
