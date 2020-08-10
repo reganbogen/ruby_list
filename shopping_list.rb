@@ -13,3 +13,6 @@ def add_list_item
   hash = {"name"=> name}
   return hash
 end
+
+list = create_list()
+puts list.inspect
