@@ -19,5 +19,6 @@ end
 
 list = create_list()
 puts list.inspect
+list['items'].push(add_list_item())
 
 puts add_list_item().inspect
