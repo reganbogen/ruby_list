@@ -27,13 +27,14 @@ def print_list(list) #method with list we want to print as argument
   
   list["items"].each do |item| #each method - blocks are curly braces or 'do' and 'end'
     #take each item in this array of list items and assign it to a variable called 'item'
-    puts "Item: " + item['name'] #print out item name 
-    puts "Quantity: " + item['quantity'].to_s #and quantity, change to string
+    puts "\tItem: " + item['name'] + 
+        "Quantity: " + item['quantity'].to_s 
     print_separator()
   end
 end
 
 list = create_list()
-list['items'].push(add_list_item())
+list['items'].push(add_list_item()) 
+#asks the question 'what is the item called? and quantity?', if you use it again it will ask for another list item after you add the first.
 
 print_list(list)
