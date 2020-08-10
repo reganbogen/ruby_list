@@ -29,12 +29,17 @@ def print_list(list) #method with list we want to print as argument
     #take each item in this array of list items and assign it to a variable called 'item'
     puts "\tItem: " + item['name'] + 
         "Quantity: " + item['quantity'].to_s 
-    print_separator()
   end
+  print_separator()
 end
 
 list = create_list()
+
+puts "Great! Add some items to your list."
+
+list['items'].push(add_list_item()) 
 list['items'].push(add_list_item()) 
 #asks the question 'what is the item called? and quantity?', if you use it again it will ask for another list item after you add the first.
 
+puts "Here's your list:\n"
 print_list(list)
